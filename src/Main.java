@@ -1,3 +1,10 @@
+import Builder.TableBuilderDemo;
+import DataAccessObject.DemoDAO;
+import DependencyInjection.MyMessageDITest;
+import Factory.FactoryMethodDemo;
+import Prototype.PrototypeFactory;
+import Singleton.DemoSingleThread;
+
 /**
  * Create by: IntelliJ IDEA
  * User     : ${USER}
@@ -7,6 +14,11 @@
  */
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        DemoSingleThread.example();
+        FactoryMethodDemo.example();
+        PrototypeFactory.example();
+        TableBuilderDemo.demo(args);
+        DemoDAO.example();
+        MyMessageDITest.example();
     }
 }
